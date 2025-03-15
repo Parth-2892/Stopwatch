@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  background-color: #121212;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serifaa;
+}
+
+.stopwatch {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  display: inline-block;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #ffffff;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.time-segment {
+  min-width: 60px;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  margin: 12px;
+  padding: 14px 30px;
+  font-size: 1.5rem; 
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #3949ab;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #5c6bc0;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #283593;
+}
+
+button.reset {
+  background-color: #e74c3c;
+}
+
+button.reset:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    width: 300px;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+  }
+}
